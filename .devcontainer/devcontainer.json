@@ -1,5 +1,5 @@
 {
-    "name": "PyTorch GPU Devcontainer",
+    "name": "PyTorch GPU Devcontainer KAN ODEs",
     "dockerFile": "Dockerfile",
     "context": ".",
     "mounts": [
