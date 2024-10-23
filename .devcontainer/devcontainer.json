@@ -1,0 +1,20 @@
+{
+    "name": "PyTorch GPU Devcontainer",
+    "dockerFile": "Dockerfile",
+    "context": ".",
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspace,type=bind"
+    ],
+    "features": {
+        "docker-in-docker": "latest"
+    },
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-python.python"
+        
+    ],
+    "postCreateCommand": "pip install --upgrade pip",
+    "runArgs": ["--gpus", "all"] // GPUを使う場合は確実に必須
+}
